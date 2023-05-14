@@ -1,0 +1,28 @@
+.footer {
+    height: 80px;
+    background-color: rgb(209, 150, 94);
+    width: 100%;
+    align-self: flex-end;
+}
+
+.footer .container {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+}

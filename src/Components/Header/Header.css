@@ -1,0 +1,51 @@
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(209, 150, 94);
+}
+
+.header .container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3ms ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  font-size: 20px;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav li {
+  cursor: pointer;
+  transition: all 0.3ms ease-in-out;
+}
+
+.nav li:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  .logo {
+    font-size: 16px;
+  }
+
+  .nav ul {
+    font-size: 14px;
+    gap: 10px;
+  }
+}

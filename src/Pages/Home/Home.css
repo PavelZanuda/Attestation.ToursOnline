@@ -1,0 +1,114 @@
+.hero {
+  background-image: url('../../assets/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+}
+
+.cards_wrapper {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  gap: 20px;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vh;
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  .cards_wrapper {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero {
+    height: 300px;
+    background-size: 100% 300px;
+  }
+}
+
+
+.slide-1{
+    background-image: url('../../assets/italy.jpg');
+}
+.slide-2{
+    background-image: url('../../assets/hero.jpg');
+}
+.slide-3{
+    background-image: url('../../assets/germany.jpg');
+}
+.slide-4{
+    background-image: url('../../assets/france.jpg');
+}
+
+
+.slider {
+  position: relative;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: rgb(209, 150, 94);
+  font-size: 24px;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.slider button:hover {
+  color: rgb(209, 150, 94);
+}
+
+.slider .prev-btn {
+  left: 10px;
+}
+
+.slider .next-btn {
+  right: 10px;
+}
+
+.slider .prev-btn::before,
+.slider .next-btn::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid rgb(209, 150, 94);
+  border-right: 2px solid rgb(209, 150, 94);
+  transform: rotate(-45deg);
+}
+
+.slider .prev-btn::before {
+  margin-right: 5px;
+  transform: rotate(135deg);
+}
+
+.slider .next-btn::before {
+  margin-left: 5px;
+}
+
